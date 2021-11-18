@@ -1,0 +1,18 @@
+student=[]
+n=int(input("Enter Number of students in Class:")) 
+for i in range(n):
+  num=float(input("Enter Percentage of Studenst:"))
+  student.append(num)
+print("List of percentage of Students:",student,end=" ")
+def SelectionSort(student,n):
+  for i in range(n):
+    Minimum = i
+    for j in range(i+1,n):
+      if(stud[j]<student[Minimum]):
+        Minimum = j
+    temp=student[i]
+    stud[i]=student[Minimum]
+    stud[Minimum]=temp
+SelectionSort(student,n)  
+print("\n Top Five Scores---->>")    
+print(student)       
